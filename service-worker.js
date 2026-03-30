@@ -3,7 +3,7 @@ const staticAssets = [
   './',
   './index.html',
   './manifest.json',
-  './icon.png', // Tumar upload kora chobir nam jodi onno hoy, eikhane sheta likho
+  './icon.png',
   'https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital@1&display=swap',
   'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js'
 ];
