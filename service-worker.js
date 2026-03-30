@@ -1,10 +1,20 @@
 const cacheName = 'spendly-v1';
-const assets = ['./', './index.html'];
+const staticAssets = [
+  './',
+  './index.html',
+  './manifest.json',
+  './icon.png', // Tumar upload kora chobir nam jodi onno hoy, eikhane sheta likho
+  'https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital@1&display=swap',
+  'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js'
+];
 
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(cacheName).then(cache => cache.addAll(assets)));
+self.addEventListener('install', async e => {
+  const cache = await caches.open(cacheName);
+  await cache.addAll(staticAssets);
 });
 
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(res => res || fetch(e.request)));
+  e.respondWith(
+    caches.match(e.request).then(res => res || fetch(e.request))
+  );
 });
