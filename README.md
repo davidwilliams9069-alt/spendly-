@@ -15,7 +15,5 @@ Spendly is a modern, lightweight web application designed to help users track th
 - **Charts:** [Chart.js](https://www.chartjs.org/)
 - **Fonts:** Google Fonts (Sora & Playfair Display)
 
-## 🚀 How to Use
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/spendly.git](https://github.com/your-username/spendly.git)
+
+
