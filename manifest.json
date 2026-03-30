@@ -1,7 +1,7 @@
 {
   "name": "Spendly Personal Tracker",
   "short_name": "Spendly",
-  "start_url": "./tracker.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0E1117",
   "theme_color": "#4F8EF7",
